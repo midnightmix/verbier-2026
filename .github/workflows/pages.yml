@@ -1,9 +1,10 @@
-name: Deploy to GitHub Pages
+name: Enable and Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 jobs:
@@ -14,6 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Enable GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api repos/${{ github.repository }}/pages             -X POST             -F source[branch]=main             -F source[path]=/             -F build_type=workflow             --silent || echo "Pages already enabled or not needed"
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
