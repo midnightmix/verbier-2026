@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verbier 2026 — A Luxury Ski Trip</title>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&f[]=zodiak@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Snowfall Canvas -->
+<canvas id="snowCanvas" aria-hidden="true"></canvas>
+
+<!-- ============ CINEMATIC HERO ============ -->
+<header class="hero" id="hero">
+  <div class="hero-img-wrap">
+    <img src="img/hero.jpg" alt="Aerial view of Verbier ski resort" class="hero-img" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <nav class="hero-nav">
+    <span class="nav-brand">V E R B I E R</span>
+    <div class="nav-links">
+      <a href="#dining" class="nav-link">Dining</a>
+      <a href="#mountain" class="nav-link">Mountain</a>
+      <a href="#weather" class="nav-link">Conditions</a>
+      <a href="#apres" class="nav-link">Apr&egrave;s</a>
+      <a href="#essentials" class="nav-link">Essentials</a>
+    </div>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </nav>
+  <div class="hero-content">
+    <p class="hero-eyebrow">28 March — 6 April 2026</p>
+    <h1 class="hero-title">Verbier</h1>
+    <p class="hero-sub">Nine nights at the summit of Swiss alpine luxury</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-val">6</span>
+        <span class="hero-stat-lbl">Guests</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">412<small>km</small></span>
+        <span class="hero-stat-lbl">Ski Area</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">3,330<small>m</small></span>
+        <span class="hero-stat-lbl">Summit</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-val" id="countdown">14d</span>
+        <span class="hero-stat-lbl">Until Departure</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll to explore</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</header>
+
+<!-- ============ DINING ============ -->
+<section class="section section-dining" id="dining">
+  <div class="section-photo-bg">
+    <img src="img/chalet.jpg" alt="Luxury chalet dining" loading="lazy">
+  </div>
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">Confirmed Reservations</p>
+      <h2 class="section-title">Dining</h2>
+      <p class="section-desc">Eight curated bookings across nine days. All reserved for six guests. Charlotte has confirmed each unless noted.</p>
+    </div>
+
+    <div class="dining-grid">
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type lunch">Lunch</span>
+          <time class="dining-date">Sun 29 Mar</time>
+        </div>
+        <h3 class="dining-name">Au Vieux Verbier</h3>
+        <p class="dining-detail">14:00 &middot; Rue de M&eacute;dran &middot; Terrace if fine</p>
+        <p class="dining-blurb">Classic Valais mountain cooking with a sun-drenched terrace overlooking the village. Traditional Swiss fondue, raclette, and hearty alpine plates.</p>
+        <div class="dining-actions">
+          <a href="https://www.tripadvisor.fr/Restaurant_Review-g198848-d1863669-Reviews-Au_Vieux_Verbier-Verbier_Canton_of_Valais_Swiss_Alps.html" target="_blank" rel="noopener">Reviews</a>
+          <a href="tel:+41277711668">+41 27 771 16 68</a>
+        </div>
+      </article>
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type dinner">Dinner</span>
+          <time class="dining-date">Mon 30 Mar</time>
+        </div>
+        <h3 class="dining-name">Shed. Burgers</h3>
+        <p class="dining-detail">19:30 &middot; Walk-in only</p>
+        <p class="dining-blurb">Gourmet burgers in a laid-back chalet setting. No reservations taken — arrive by 19:00 to secure a table for the group.</p>
+        <div class="dining-actions">
+          <a href="https://www.google.com/maps/search/Shed+Burgers+Verbier" target="_blank" rel="noopener">Directions</a>
+        </div>
+        <div class="dining-alert">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Walk-in only. Queue early.
+        </div>
+      </article>
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type lunch">Lunch</span>
+          <time class="dining-date">Tue 31 Mar</time>
+        </div>
+        <h3 class="dining-name">Le Carrefour</h3>
+        <p class="dining-detail">14:00 &middot; Terrace if fine</p>
+        <p class="dining-blurb">A beloved Verbier institution serving refined French cuisine. The terrace is one of the best in town for a long mountain lunch in the spring sunshine.</p>
+        <div class="dining-actions">
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g198848-d971982-Reviews-Le_Carrefour-Verbier_Canton_of_Valais_Swiss_Alps.html" target="_blank" rel="noopener">Reviews</a>
+          <a href="tel:+41277716441">+41 27 771 64 41</a>
+        </div>
+      </article>
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type dinner">Dinner</span>
+          <time class="dining-date">Wed 1 Apr</time>
+        </div>
+        <h3 class="dining-name">Le Caveau</h3>
+        <p class="dining-detail">19:00 &middot; Place Centrale</p>
+        <p class="dining-blurb">Traditional Swiss fondue and raclette in a warm, candle-lit cellar on the main square. A Verbier icon for decades.</p>
+        <div class="dining-actions">
+          <a href="https://www.tripadvisor.fr/Restaurant_Review-g198848-d2012781-Reviews-Le_Caveau-Verbier_Canton_of_Valais_Swiss_Alps.html" target="_blank" rel="noopener">Reviews</a>
+          <a href="tel:+41277712226">+41 27 771 22 26</a>
+        </div>
+        <div class="dining-alert critical">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Call on the day to confirm. Booked at 19:00 as 19:30 was full.
+        </div>
+      </article>
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type lunch">Lunch</span>
+          <time class="dining-date">Thu 2 Apr</time>
+        </div>
+        <h3 class="dining-name">Le Bistro</h3>
+        <p class="dining-detail">13:00</p>
+        <p class="dining-blurb">Elegant bistro-style dining with French and Swiss influences. A refined midday retreat with attentive service.</p>
+        <div class="dining-actions">
+          <a href="https://www.google.com/maps/search/Le+Bistro+Verbier" target="_blank" rel="noopener">Directions</a>
+        </div>
+      </article>
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type lunch">Lunch</span>
+          <time class="dining-date">Fri 3 Apr</time>
+        </div>
+        <h3 class="dining-name">Le Rouge</h3>
+        <p class="dining-detail">15:00 &middot; Route de Ransou &middot; Terrace if fine</p>
+        <p class="dining-blurb">Verbier's iconic restaurant and apr&egrave;s-ski destination. Ski-in accessible, with DJs on the sun terrace. The late lunch will flow seamlessly into apr&egrave;s.</p>
+        <div class="dining-actions">
+          <a href="https://www.lerouge-verbier.com" target="_blank" rel="noopener">Website</a>
+          <a href="tel:+41277716926">+41 27 771 69 26</a>
+        </div>
+      </article>
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type dinner">Dinner</span>
+          <time class="dining-date">Sat 4 Apr</time>
+        </div>
+        <h3 class="dining-name">L'&Eacute;curie</h3>
+        <p class="dining-detail">19:30</p>
+        <p class="dining-blurb">A converted stable transformed into one of Verbier's most romantic restaurants. Refined mountain cuisine by candlelight. The Saturday night crescendo.</p>
+        <div class="dining-actions">
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g198848-d3564028-Reviews-L_Ecurie_Restaurant-Verbier_Canton_of_Valais_Swiss_Alps.html" target="_blank" rel="noopener">Reviews</a>
+        </div>
+      </article>
+
+      <article class="dining-card fade-in">
+        <div class="dining-top">
+          <span class="dining-type lunch">Lunch</span>
+          <time class="dining-date">Sun 5 Apr</time>
+        </div>
+        <h3 class="dining-name">Le Carrefour</h3>
+        <p class="dining-detail">14:00 &middot; Outside if possible</p>
+        <p class="dining-blurb">A farewell return to this Verbier favourite. The perfect terrace for a last long lunch before departure.</p>
+        <div class="dining-actions">
+          <a href="tel:+41277716441">+41 27 771 64 41</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="free-evenings fade-in">
+      <h3>Open Evenings</h3>
+      <p>These nights have no booking — ideal for a fondue at the chalet, exploring, or a spontaneous discovery:</p>
+      <div class="chip-row">
+        <span class="chip">Sat 28 Mar</span>
+        <span class="chip">Sun 29 Mar</span>
+        <span class="chip">Tue 31 Mar</span>
+        <span class="chip">Thu 2 Apr</span>
+        <span class="chip">Fri 3 Apr</span>
+        <span class="chip">Sun 5 Apr</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOUNTAIN ============ -->
+<section class="section section-mountain" id="mountain">
+  <div class="section-photo-bg">
+    <img src="img/montfort.jpg" alt="Mont Fort panoramic view" loading="lazy">
+  </div>
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">Verbier 4 Vall&eacute;es &middot; 412km</p>
+      <h2 class="section-title">The Mountain</h2>
+      <p class="section-desc">One of the world's great ski domains. From the legendary steeps of Mont Fort to the sun-kissed cruisers of Savoleyres, nine days barely scratches the surface.</p>
+    </div>
+
+    <div class="mountain-grid">
+      <div class="mtn-card glass fade-in">
+        <h3>Run Profile</h3>
+        <div class="run-bars">
+          <div class="run-bar-item"><span class="run-dot" style="background:#3b82f6"></span>Blue<span class="run-ct">~35</span></div>
+          <div class="run-bar-item"><span class="run-dot" style="background:#ef4444"></span>Red<span class="run-ct">~40</span></div>
+          <div class="run-bar-item"><span class="run-dot" style="background:#1e293b"></span>Black<span class="run-ct">~20</span></div>
+          <div class="run-bar-item"><span class="run-dot" style="background:#eab308"></span>Itinerary<span class="run-ct">~6</span></div>
+        </div>
+        <div class="run-visual">
+          <div style="width:35%;background:#3b82f6"></div>
+          <div style="width:40%;background:#ef4444"></div>
+          <div style="width:19%;background:#1e293b"></div>
+          <div style="width:6%;background:#eab308"></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Key Lifts</h3>
+        <div class="lift-list">
+          <div class="lift-row"><span class="lift-tag">TC</span><div><strong>M&eacute;dran</strong><p>Main gondola &rarr; Les Ruinettes 2,200m</p></div></div>
+          <div class="lift-row"><span class="lift-tag">TPH</span><div><strong>Mont Fort</strong><p>Summit cable car &rarr; 3,330m panoramic</p></div></div>
+          <div class="lift-row"><span class="lift-tag">TC</span><div><strong>Jumbo</strong><p>Ruinettes &rarr; Attelas. La Chaux connection</p></div></div>
+          <div class="lift-row"><span class="lift-tag">TS</span><div><strong>Savoleyres</strong><p>Gentle terrain &amp; La Tzoumaz link</p></div></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Runs Not to Miss</h3>
+        <div class="runs-list">
+          <div class="run-item"><span class="run-dot" style="background:#1e293b"></span><div><strong>Mont Fort &rarr; Tortin</strong><p>Legendary 3,330m descent. Expert only. Check conditions.</p></div></div>
+          <div class="run-item"><span class="run-dot" style="background:#ef4444"></span><div><strong>Piste de l'Ours</strong><p>Beautiful long red from Savoleyres. Scenic cruiser.</p></div></div>
+          <div class="run-item"><span class="run-dot" style="background:#1e293b"></span><div><strong>Mont Gel&eacute;</strong><p>Off-piste from 3,023m. Guide recommended. Steep couloirs.</p></div></div>
+          <div class="run-item"><span class="run-dot" style="background:#3b82f6"></span><div><strong>La Chaux</strong><p>Wide, sunny blue. Perfect for warm-up laps in the morning.</p></div></div>
+          <div class="run-item"><span class="run-dot" style="background:#ef4444"></span><div><strong>Attelas &rarr; Ruinettes</strong><p>Classic intermediate descent through open bowls.</p></div></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass wide fade-in">
+        <h3>Maps &amp; Apps</h3>
+        <div class="resource-grid">
+          <a href="https://verbier4vallees.ch/en/useful-information/interactive-map" target="_blank" rel="noopener" class="resource-link">
+            <strong>Interactive Ski Map</strong><p>Live lift status, GPS, piste conditions</p>
+          </a>
+          <a href="https://www.seeverbier.com/maps" target="_blank" rel="noopener" class="resource-link">
+            <strong>Piste Maps PDF</strong><p>Printable trail maps for offline use</p>
+          </a>
+          <a href="https://www.weski.com/en-us/guides/pistes-maps/switzerland-4-vallees-verbier" target="_blank" rel="noopener" class="resource-link">
+            <strong>WeSki Guide</strong><p>Detailed run descriptions &amp; ratings</p>
+          </a>
+          <a href="https://apps.apple.com/app/skiif/id6449255498" target="_blank" rel="noopener" class="resource-link">
+            <strong>Skiif GPS App</strong><p>Real-time on-slope navigation</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WEATHER & CONDITIONS ============ -->
+<section class="section section-weather" id="weather">
+  <div class="section-photo-bg">
+    <img src="img/peaks.jpg" alt="Verbier mountain peaks above clouds" loading="lazy">
+  </div>
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">Late March &middot; Spring Skiing</p>
+      <h2 class="section-title">Conditions</h2>
+      <p class="section-desc">Spring in the high Alps: firm mornings, corn snow by midday, sunshine on the terrace by three. Plan your day around the sun and altitude.</p>
+    </div>
+
+    <div class="weather-grid">
+      <div class="mtn-card glass fade-in">
+        <h3>Historical Averages</h3>
+        <div class="wx-stats">
+          <div class="wx-stat"><span class="wx-icon">&#127777;&#65039;</span><span class="wx-val">-4&deg;C</span><span class="wx-lbl">Mid-altitude high</span></div>
+          <div class="wx-stat"><span class="wx-icon">&#10052;&#65039;</span><span class="wx-val">13cm</span><span class="wx-lbl">March snowfall avg</span></div>
+          <div class="wx-stat"><span class="wx-icon">&#9728;&#65039;</span><span class="wx-val">2 / 7</span><span class="wx-lbl">Sunny days/week</span></div>
+          <div class="wx-stat"><span class="wx-icon">&#128168;</span><span class="wx-val">12 km/h</span><span class="wx-lbl">Avg wind speed</span></div>
+          <div class="wx-stat"><span class="wx-icon">&#127956;&#65039;</span><span class="wx-val">1,759m</span><span class="wx-lbl">Freezing level</span></div>
+          <div class="wx-stat"><span class="wx-icon">&#127935;</span><span class="wx-val">3.8</span><span class="wx-lbl">Snow days/week</span></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Spring Skiing Strategy</h3>
+        <div class="tips">
+          <div class="tip"><span class="tip-n">01</span><div><strong>Ski high in the morning</strong><p>Head to Mont Fort / Attelas early. Snow is firmest above 2,500m before 11:00.</p></div></div>
+          <div class="tip"><span class="tip-n">02</span><div><strong>Chase the sun clockwise</strong><p>South-facing runs mid-morning for perfect corn snow before they soften too much.</p></div></div>
+          <div class="tip"><span class="tip-n">03</span><div><strong>Afternoons go north</strong><p>North-facing slopes hold snow later. Savoleyres is ideal after lunch.</p></div></div>
+          <div class="tip"><span class="tip-n">04</span><div><strong>Layer aggressively</strong><p>-10&deg;C at 08:30 to +5&deg;C by 14:00 in the sun. Removable layers are essential.</p></div></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Sun &amp; Snow Protection</h3>
+        <div class="protect-grid">
+          <div class="protect-item"><span>&#129396;</span><div><strong>SPF 50+ Sunscreen</strong><p>UV at 2,500m is 50% stronger. Reapply every 2 hours.</p></div></div>
+          <div class="protect-item"><span>&#128526;</span><div><strong>Cat 4 Goggles</strong><p>Essential for spring glare. Bring amber lenses for flat light days.</p></div></div>
+          <div class="protect-item"><span>&#128167;</span><div><strong>Lip Balm SPF 30+</strong><p>Lips burn fast at altitude. Apply before and after every meal.</p></div></div>
+          <div class="protect-item"><span>&#129510;</span><div><strong>Neck Gaiter</strong><p>Cold mornings, sun protection, wind barrier. The most versatile item.</p></div></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass wide fade-in">
+        <h3>Live Forecasts</h3>
+        <div class="resource-grid">
+          <a href="https://www.snow-forecast.com/resorts/Verbier/6day/mid" target="_blank" rel="noopener" class="resource-link">
+            <strong>Snow Forecast</strong><p>6-day snow &amp; weather forecast</p>
+          </a>
+          <a href="https://verbier4vallees.ch/en/useful-information/daily-report" target="_blank" rel="noopener" class="resource-link">
+            <strong>Daily Piste Report</strong><p>Official lift &amp; run status</p>
+          </a>
+          <a href="https://www.meteoswiss.admin.ch/local-forecasts/verbier/1936.html" target="_blank" rel="noopener" class="resource-link">
+            <strong>MeteoSwiss</strong><p>Most accurate local forecast</p>
+          </a>
+          <a href="https://www.slf.ch/en/avalanche-bulletin-and-snow-situation.html" target="_blank" rel="noopener" class="resource-link">
+            <strong>SLF Avalanche Bulletin</strong><p>Essential for off-piste days</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APRES-SKI ============ -->
+<section class="section section-apres" id="apres">
+  <div class="section-photo-bg">
+    <img src="img/skiing.jpg" alt="Skiing in Verbier powder" loading="lazy">
+  </div>
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">From Piste to Party</p>
+      <h2 class="section-title">Apr&egrave;s-Ski &amp; Nightlife</h2>
+      <p class="section-desc">Verbier's apr&egrave;s scene is legendary — from sun-soaked mountain terraces to candlelit wine bars and late-night clubs that run until dawn.</p>
+    </div>
+
+    <div class="apres-grid">
+      <div class="mtn-card glass fade-in">
+        <h3>On the Mountain</h3>
+        <div class="apres-list">
+          <div class="apres-item"><span class="apres-tag hot">HOT</span><div><strong>Le Rouge</strong><p>The original Verbier apr&egrave;s. DJs, sun terrace, Champagne. Gets packed from 15:00. Your booking here is Friday 3 Apr.</p><a href="https://www.lerouge-verbier.com" target="_blank" rel="noopener">lerouge-verbier.com</a></div></div>
+          <div class="apres-item"><span class="apres-tag hot">HOT</span><div><strong>Bar 1936</strong><p>Trendy mountain bar at La Chaux with live DJs and panoramic cocktails on the terrace.</p></div></div>
+          <div class="apres-item"><span class="apres-tag chill">CHILL</span><div><strong>Chez Dany</strong><p>Intimate chalet at Clambin. Ski-in, snowshoe-in. Book ahead for sunset drinks and cheese.</p></div></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>In the Village</h3>
+        <div class="apres-list">
+          <div class="apres-item"><span class="apres-tag hot">HOT</span><div><strong>Pub Mont Fort</strong><p>Verbier's legendary pub since 1981. Live music, pool table. Gets going after 22:00.</p></div></div>
+          <div class="apres-item"><span class="apres-tag hot">HOT</span><div><strong>Farinet Lounge &amp; Club</strong><p>The heart of Verbier nightlife. Outdoor terrace, indoor club. The apr&egrave;s-to-evening pipeline.</p></div></div>
+          <div class="apres-item"><span class="apres-tag chill">CHILL</span><div><strong>Fer &agrave; Cheval</strong><p>Iconic wine bar on Place Centrale. Sophisticated cocktails, excellent people-watching.</p></div></div>
+          <div class="apres-item"><span class="apres-tag chill">CHILL</span><div><strong>Offshore Caf&eacute;</strong><p>Relaxed caf&eacute;-bar with great coffee by day, cocktails by evening. Main strip.</p></div></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass wide fade-in">
+        <h3>Late Night</h3>
+        <div class="resource-grid cols-2">
+          <div class="resource-link no-hover"><strong>Casbah</strong><p>Boutique nightclub. Intimate, stylish, superb sound. Open until 04:00.</p></div>
+          <div class="resource-link no-hover"><strong>Crock No Name</strong><p>Hidden gem for late-night drinks. Unpretentious dive-bar energy. Open late.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESSENTIALS ============ -->
+<section class="section section-essentials" id="essentials">
+  <div class="section-photo-bg">
+    <img src="img/village.jpg" alt="Luxury Verbier chalet in snow" loading="lazy">
+  </div>
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">Everything You Need</p>
+      <h2 class="section-title">Essentials</h2>
+    </div>
+
+    <div class="essentials-grid">
+      <div class="mtn-card glass fade-in">
+        <h3>Lift Passes</h3>
+        <div class="detail-list">
+          <div class="detail-row"><span>Verbier 4 Vall&eacute;es pass</span><span class="detail-val">82 lifts, 412km</span></div>
+          <div class="detail-row"><span>9-day pass (approx.)</span><span class="detail-val">CHF 520 — 580</span></div>
+          <div class="detail-row"><span>Buy online for discount</span><a href="https://verbier4vallees.ch/en/plan/buy-online" target="_blank" rel="noopener" class="detail-link">Purchase</a></div>
+          <div class="detail-row"><span>Lift hours (late March)</span><span class="detail-val">08:30 — 16:15</span></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Emergency Contacts</h3>
+        <div class="emergency-grid">
+          <div class="emg-item critical"><strong>Mountain Rescue</strong><a href="tel:144">144</a></div>
+          <div class="emg-item critical"><strong>REGA Air Rescue</strong><a href="tel:1414">1414</a></div>
+          <div class="emg-item"><strong>European Emergency</strong><a href="tel:112">112</a></div>
+          <div class="emg-item"><strong>Police</strong><a href="tel:117">117</a></div>
+          <div class="emg-item"><strong>Verbier Tourist Office</strong><a href="tel:+41277753888">+41 27 775 38 88</a></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Getting There &amp; Around</h3>
+        <div class="detail-list">
+          <div class="detail-row"><span>Geneva Airport</span><span class="detail-val">~2h drive</span></div>
+          <div class="detail-row"><span>Free local bus</span><span class="detail-val">With lift pass</span></div>
+          <div class="detail-row"><span>Verbier Taxis</span><a href="tel:+41277711414" class="detail-link">+41 27 771 14 14</a></div>
+          <div class="detail-row"><span>Nearest hospital</span><span class="detail-val">H&ocirc;pital de Martigny ~30 min</span></div>
+          <div class="detail-row"><span>Swiss Rail timetable</span><a href="https://www.sbb.ch/en" target="_blank" rel="noopener" class="detail-link">SBB.ch</a></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Ski School &amp; Guides</h3>
+        <div class="detail-list">
+          <div class="detail-row"><span>Swiss Ski School Verbier</span><a href="https://www.esverbier.ch/en/" target="_blank" rel="noopener" class="detail-link">esverbier.ch</a></div>
+          <div class="detail-row"><span>Warren Smith Ski Academy</span><a href="https://www.warrensmith-skiacademy.com" target="_blank" rel="noopener" class="detail-link">Book</a></div>
+          <div class="detail-row"><span>Off-piste mountain guide</span><span class="detail-val">Highly recommended</span></div>
+          <div class="detail-row"><span>Guide booking</span><a href="https://www.verbier.ch/en/activites/mountain-guides/" target="_blank" rel="noopener" class="detail-link">Guides</a></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Wellness &amp; Recovery</h3>
+        <div class="detail-list">
+          <div class="detail-row"><span>Spa &amp; pool</span><span class="detail-val">Check chalet facilities</span></div>
+          <div class="detail-row"><span>Verbier Physio &amp; Sports</span><a href="https://www.google.com/maps/search/physiotherapy+verbier" target="_blank" rel="noopener" class="detail-link">Find</a></div>
+          <div class="detail-row"><span>Verbier Pharmacy</span><span class="detail-val">Place Centrale</span></div>
+        </div>
+      </div>
+
+      <div class="mtn-card glass fade-in">
+        <h3>Packing Checklist</h3>
+        <div class="checklist">
+          <label class="check-item"><input type="checkbox"><span>Ski jacket &amp; trousers</span></label>
+          <label class="check-item"><input type="checkbox"><span>Base layers (&times;3)</span></label>
+          <label class="check-item"><input type="checkbox"><span>Mid layers / fleece</span></label>
+          <label class="check-item"><input type="checkbox"><span>Ski socks (&times;4)</span></label>
+          <label class="check-item"><input type="checkbox"><span>Helmet</span></label>
+          <label class="check-item"><input type="checkbox"><span>Goggles (2 lenses)</span></label>
+          <label class="check-item"><input type="checkbox"><span>Gloves + liners</span></label>
+          <label class="check-item"><input type="checkbox"><span>Neck gaiter / buff</span></label>
+          <label class="check-item"><input type="checkbox"><span>SPF 50+ sunscreen</span></label>
+          <label class="check-item"><input type="checkbox"><span>Lip balm SPF 30+</span></label>
+          <label class="check-item"><input type="checkbox"><span>Sunglasses (Cat 3/4)</span></label>
+          <label class="check-item"><input type="checkbox"><span>Apr&egrave;s-ski boots</span></label>
+          <label class="check-item"><input type="checkbox"><span>Smart dinner wear</span></label>
+          <label class="check-item"><input type="checkbox"><span>Power bank</span></label>
+          <label class="check-item"><input type="checkbox"><span>Swiss adapter (Type J)</span></label>
+          <label class="check-item"><input type="checkbox"><span>Passport / ID</span></label>
+          <label class="check-item"><input type="checkbox"><span>EHIC / GHIC card</span></label>
+          <label class="check-item"><input type="checkbox"><span>Travel insurance docs</span></label>
+        </div>
+      </div>
+
+      <div class="mtn-card glass wide fade-in">
+        <h3>Quick Links</h3>
+        <div class="resource-grid">
+          <a href="https://www.verbier.ch/en/" target="_blank" rel="noopener" class="resource-link"><strong>Verbier Official</strong><p>Tourist office, events, accommodation</p></a>
+          <a href="https://verbier4vallees.ch/en/" target="_blank" rel="noopener" class="resource-link"><strong>4 Vall&eacute;es</strong><p>Lift passes, live cams, piste status</p></a>
+          <a href="https://www.sbb.ch/en" target="_blank" rel="noopener" class="resource-link"><strong>Swiss Rail (SBB)</strong><p>Geneva &rarr; Le Ch&acirc;ble schedules</p></a>
+          <a href="https://www.myswitzerland.com/en-gb/" target="_blank" rel="noopener" class="resource-link"><strong>Switzerland Tourism</strong><p>Currency, culture, travel tips</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <p>Verbier 2026 &middot; Prepared with care for six</p>
+  <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
